@@ -1,12 +1,12 @@
 // import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 import React from 'react'
 // import Home from './Component/Home';
 // import Login from './Component/Login';
 import Navbar from './Component/Navbar';
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+export default function App() {
   // return(
   //   <BrowserRouter>
   //     <Routes>
@@ -39,5 +39,3 @@ function App() {
     </React.Fragment>
   );
 }
-
-export default App;
