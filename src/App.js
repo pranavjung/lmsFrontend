@@ -2,15 +2,15 @@
 import React from 'react'
 import Login from './Component/Login';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Welcome from './Component/Welcome';
+// import Welcome from './Component/Welcome';
 import Home from './Component/Home'
-import Attendance from './Component/Attendance'
-import Courseware from './Component/Courseware'
-import Exam from './Component/Exam'
-import Result from './Component/Result'
-import PerformanceAnalysis from './Component/PerformanceAnalysis'
-import Profile from './Component/Profile'
-import Assignments from './Component/Assignments'
+// import Attendance from './Component/Attendance'
+// import Courseware from './Component/Courseware'
+// import Exam from './Component/Exam'
+// import Result from './Component/Result'
+// import PerformanceAnalysis from './Component/PerformanceAnalysis'
+// import Profile from './Component/Profile'
+// import Assignments from './Component/Assignments'
 
 export default function App() {
   return (
@@ -18,15 +18,15 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={<Login />} />
-          <Route path="/welcome" element={<Welcome />} />
+          {/* <Route path="/welcome" element={<Welcome />} /> */}
           <Route path="/home" element={<Home />} />
-          <Route path="/attendance" element={<Attendance />} />
+          {/* <Route path="/attendance" element={<Attendance />} />
           <Route path="/courseware" element={<Courseware />} />
           <Route path="/exam" element={<Exam />} />
           <Route path="/result" element={<Result />} />
           <Route path="/performance-analysis" element={<PerformanceAnalysis />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/assignments" element={<Assignments />} />
+          <Route path="/assignments" element={<Assignments />} /> */}
         </Routes>
       </BrowserRouter>
     </>

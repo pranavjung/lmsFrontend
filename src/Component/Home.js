@@ -7,3 +7,15 @@ export default function Home() {
         </>
     );
 }
+
+export function Umesh(){
+    <>
+        <h1>Hi I am umesh!</h1>
+    </>
+}
+
+export function Umesh1(){
+    <>
+        <h1>Hi I am umesh!</h1>
+    </>
+}

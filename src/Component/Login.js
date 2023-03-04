@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Navigate } from "react-router-dom";
-// import Home from "./Home";
 
 import "../Styles/Login.css";
 
@@ -70,7 +69,7 @@ function Login() {
           {renderErrorMessage("pass")}
         </div>
         <div className="button-container">
-          <input type="submit" />
+          <input type="submit" value="Login"/>
         </div>
       </form>
     </div>
@@ -80,7 +79,7 @@ function Login() {
     <div className="app">
       <div className="login-form">
         <div className="title">Sign In</div>
-        {isSubmitted ? <Navigate to="/welcome" /> : renderForm}
+        {isSubmitted ? <Navigate to="/home" /> : renderForm}
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import Logo from "../Images/InfoLearn-logos_transparent.png";
 import {FaBars, FaTimes} from "react-icons/fa";
 import { useRef } from "react";
 import "../Styles/Navbar.css";
+import { Button } from "reactstrap";
 
 export default function Navbar() {
     const navRef = useRef();
@@ -23,7 +24,7 @@ export default function Navbar() {
                 <a href="/performance-analysis">Performance Analysis</a>
                 <a href="/profile">Profile</a>
                 <a href="/assignments">Assignments</a>
-                <button className="logout">Logout</button> 
+                <Button color="primary">Logout</Button> 
                 <button className="nav-btn nav-close-btn" onClick={showNavBar}>
                     <FaTimes />
                 </button>
