@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { Navigate } from "react-router-dom";
+// import Home from "./Home";
 
 import "../Styles/Login.css";
 
 function Login() {
-  // React States
+  // React States, or hooks in react
   const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -78,7 +80,7 @@ function Login() {
     <div className="app">
       <div className="login-form">
         <div className="title">Sign In</div>
-        {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
+        {isSubmitted ? <Navigate to="/home" /> : renderForm}
       </div>
     </div>
   );

@@ -23,7 +23,7 @@ export default function Navbar() {
                 <a href="/#">Performance Analysis</a>
                 <a href="/#">Profile</a>
                 <a href="/#">Assignments</a>
-                <a href="/#">Logout</a>
+                <button>Logout</button> 
                 <button className="nav-btn nav-close-btn" onClick={showNavBar}>
                     <FaTimes />
                 </button>
