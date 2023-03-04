@@ -80,7 +80,7 @@ function Login() {
     <div className="app">
       <div className="login-form">
         <div className="title">Sign In</div>
-        {isSubmitted ? <Navigate to="/home" /> : renderForm}
+        {isSubmitted ? <Navigate to="/welcome" /> : renderForm}
       </div>
     </div>
   );
