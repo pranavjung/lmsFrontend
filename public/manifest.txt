@@ -29,3 +29,63 @@
 
 manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+
+
+import Welcome from './Component/Welcome';
+import Attendance from './Component/Attendance'
+import Courseware from './Component/Courseware'
+import Exam from './Component/Exam'
+import Result from './Component/Result'
+import PerformanceAnalysis from './Component/PerformanceAnalysis'
+import Profile from './Component/Profile'
+import Assignments from './Component/Assignments'
+
+<Route path="/welcome" element={<Welcome />} />
+<Route path="/attendance" element={<Attendance />} />
+<Route path="/courseware" element={<Courseware />} />
+<Route path="/exam" element={<Exam />} />
+<Route path="/result" element={<Result />} />
+<Route path="/performance-analysis" element={<PerformanceAnalysis />} />
+<Route path="/profile" element={<Profile />} />
+<Route path="/assignments" element={<Assignments />} />
+
+
+App.css
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

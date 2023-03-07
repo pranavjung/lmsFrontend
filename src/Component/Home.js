@@ -1,21 +1,25 @@
-import React from 'react'
+import React from 'react';
+import Notice from './Notice';
+import Navbar from './Navbar';
+import Sessions from './Sessions';
+import { Col, Container, Row } from 'reactstrap';
 
 export default function Home() {
     return (
         <>
-            <h1>Home page</h1>
+            <Container>
+                <Row>
+                    <Navbar />
+                </Row>
+                <Row>
+                    <Col md={8}>
+                        <Sessions />
+                    </Col>
+                    <Col md={4}>
+                        <Notice />
+                    </Col>
+                </Row>
+            </Container>
         </>
     );
-}
-
-export function Umesh(){
-    <>
-        <h1>Hi I am umesh!</h1>
-    </>
-}
-
-export function Umesh1(){
-    <>
-        <h1>Hi I am umesh!</h1>
-    </>
 }

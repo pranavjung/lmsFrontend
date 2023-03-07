@@ -24,7 +24,7 @@ export default function Navbar() {
                 <a href="/performance-analysis">Performance Analysis</a>
                 <a href="/profile">Profile</a>
                 <a href="/assignments">Assignments</a>
-                <Button color="primary">Logout</Button> 
+                <Button color="danger" outline>Logout</Button> 
                 <button className="nav-btn nav-close-btn" onClick={showNavBar}>
                     <FaTimes />
                 </button>
