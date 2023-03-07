@@ -1,7 +1,7 @@
 import React from 'react';
-import Notice from './Notice';
+import Notice from './Subcomponents/Notice';
 import Navbar from './Navbar';
-import Sessions from './Sessions';
+import Sessions from './Subcomponents/Sessions';
 import { Col, Container, Row } from 'reactstrap';
 
 export default function Home() {

@@ -6,6 +6,7 @@ import { Button } from "reactstrap";
 
 export default function Navbar() {
     const navRef = useRef();
+    
 
     const showNavBar = () => {
         navRef.current.classList.toggle(
@@ -18,12 +19,12 @@ export default function Navbar() {
             <nav ref={navRef}>
                 <a href="/home">Home</a>
                 <a href="/attendance">Attendance</a>
+                <a href="/assignments">Assignments</a>
                 <a href="/courseware">Courseware</a>
-                <a href="/exam">Exam</a>
-                <a href="/result">Result</a>
+                <a href="/exams">Exam</a>
+                <a href="/results">Result</a>
                 <a href="/performance-analysis">Performance Analysis</a>
                 <a href="/profile">Profile</a>
-                <a href="/assignments">Assignments</a>
                 <Button color="danger" outline>Logout</Button> 
                 <button className="nav-btn nav-close-btn" onClick={showNavBar}>
                     <FaTimes />

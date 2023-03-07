@@ -1,5 +1,6 @@
 import React, {/* Fragment */ } from 'react';
-import { Card, CardBody, CardTitle, CardText, Button, Form, FormGroup, Input, Label, /*CardSubtitle, CardFooter, Container*/ } from "reactstrap";
+import { Card, CardBody, Button, Form, FormGroup, Input, Label, Table, CardHeader, /*CardSubtitle, CardTitle, CardText, CardFooter, Container*/ } from "reactstrap";
+import Navbar from './Navbar';
 
 
 export function UpdateProfile(emailID, password, name, designation, contactNo, address, dob, gender, bloodGroup, ccatRollNo, studentPrn) {
@@ -47,20 +48,64 @@ export function UpdateProfile(emailID, password, name, designation, contactNo, a
 
 export default function Profile(user) {
     return (
-        <Card className='text-center'>
-            <CardBody>
-                <CardTitle>Profile</CardTitle>
-                <CardText>Name: {user.name}</CardText>
-                <CardText>emailId: {user.emailID}</CardText>
-                <CardText>password: <Button>Update Password</Button> </CardText>
-                <CardText>Designation: {user.designation}</CardText>
-                <CardText>Contact No.: {user.contactNo}</CardText>
-                <CardText>Address: {user.address}</CardText>
-                <CardText>Date of Birth: {user.dob}</CardText>
-                <CardText>Gender: {user.gender}</CardText>
-                <CardText>Blood Group: {user.bloodGroup}</CardText>
-            </CardBody>
-        </Card>
+        <>
+        <Navbar />
+            <Card className='text-center'>
+                <CardHeader>Profile</CardHeader>
+                <CardBody>
+                    <div>
+                        <Table striped border hover variant="dark">
+                            <tr>
+                                <th>Name:</th>
+                                <td>{user.name}</td>
+                            </tr>
+                            <tr>
+                                <th>EmailId:</th>
+                                <td>{user.emailID}</td>
+                            </tr>
+                            <tr>
+                                <th>Password:</th>
+                                <td><Button color="primary">Update Password</Button></td>
+                            </tr>
+                            <tr>
+                                <th>Designation:</th>
+                                <td>{user.designation}</td>
+                            </tr>
+                            <tr>
+                                <th>Contact No.:</th>
+                                <td>{user.contactNo}</td>
+                            </tr>
+                            <tr>
+                                <th>Address:</th>
+                                <td>{user.address}</td>
+                            </tr>
+                            <tr>
+                                <th>Date of Birth:</th>
+                                <td>{user.dob}</td>
+                            </tr>
+                            <tr>
+                                <th>Gender:</th>
+                                <td>{user.gender}</td>
+                            </tr>
+                            <tr>
+                                <th>Blood Group:</th>
+                                <td>{user.bloodGroup}</td>
+                            </tr>
+                        </Table>
+                    </div>
+                    {/* <CardTitle>Profile</CardTitle>
+                        <CardText>Name: {user.name}</CardText>
+                        <CardText>emailId: {user.emailID}</CardText>
+                        <CardText>password: <Button>Update Password</Button> </CardText>
+                        <CardText>Designation: {user.designation}</CardText>
+                        <CardText>Contact No.: {user.contactNo}</CardText>
+                        <CardText>Address: {user.address}</CardText>
+                        <CardText>Date of Birth: {user.dob}</CardText>
+                        <CardText>Gender: {user.gender}</CardText>
+                        <CardText>Blood Group: {user.bloodGroup}</CardText> */}
+                </CardBody>
+            </Card>
+        </>
     )
 }
 
